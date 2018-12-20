@@ -26,6 +26,7 @@ public class valiateUsernameServlet extends HttpServlet {
             result = "<font color = 'green' > 该用户名可以使用</font>";
         }
         response.setContentType("text/html");
+        response.setCharacterEncoding("UTF-8");
         response.getWriter().print(result);
 
     }
