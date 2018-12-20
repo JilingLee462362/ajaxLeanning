@@ -10,7 +10,7 @@
           function () {
               var url = this.href;
               var args ={"time":new Date()};
-              $.getJSON(url,args,function (data) {
+              $.getJSON(url,args,function (data){
                   var name = data.person.name;
                  $("#context").empty().append("用JSON拿到name："+name);
               });
